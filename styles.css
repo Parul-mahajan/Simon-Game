@@ -1,20 +1,52 @@
 body {
+  background-color: #011f3f;
+}
+main {
   text-align: center;
-  background-color: #011F3F;
+  position: relative;
 }
 
+.start {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  /* margin: 5%; */
+  color: #fef2bf;
+  border: 10px solid black;
+  border-radius: 20%;
+  background-color: black;
+}
+.flyer-btn {
+  position: absolute;
+  left: 0;
+  margin: 3%;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.7rem;
+  border: 7px solid black;
+  border-radius: 16%;
+}
+.flyer {
+  background-color: lightcoral;
+  position: absolute;
+  z-index: 10;
+  margin: 5%;
+  /* margin: 25px; */
+  padding: 7%;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
 #level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  5%;
-  color: #FEF2BF;
+  font-family: "Press Start 2P", cursive;
+  font-size: rem;
+  margin: 5%;
+  color: #fef2bf;
 }
 
 .container {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
 .btn {
@@ -50,4 +82,8 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+.icon {
+  background-color: lightcoral;
 }

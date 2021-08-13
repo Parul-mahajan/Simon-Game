@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simon</title>
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Simon</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-</head>
-
-<body>
-  <h1 id="level-title">Press A Key to Start</h1>
-  <div class="container">
-    <div lass="row">
-
-      <div type="button" id="green" class="btn green">
-
+  <body>
+    <main>
+      <button class="flyer-btn">How to play</button>
+      <div class="flyer">
+        As you press the start. Randomly one of the four boxes will light up. On
+        each level you have to click exact same sequence of colors as chosen by
+        game until now. Eg- blue - blue - lvl - 1 red - blue - red - lvl -2
+        ...... Have fun!
       </div>
+      <h1 id="level-title"></h1>
+      <button class="start">Start</button>
 
-      <div type="button" id="red" class="btn red">
+      <div class="container">
+        <div lass="row">
+          <div type="button" id="green" class="btn green"></div>
 
+          <div type="button" id="red" class="btn red"></div>
+        </div>
+
+        <div class="row">
+          <div type="button" id="yellow" class="btn yellow"></div>
+          <div type="button" id="blue" class="btn blue"></div>
+        </div>
       </div>
-    </div>
-
-    <div class="row">
-
-      <div type="button" id="yellow" class="btn yellow">
-
-      </div>
-      <div type="button" id="blue" class="btn blue">
-
-      </div>
-
-    </div>
-
-  </div>
-  <footer>
-    made with by parul.
-  </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script src="game.js"></script>
-</body>
-
+      <footer>made with by parul.</footer>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="game.js"></script>
+  </body>
 </html>
