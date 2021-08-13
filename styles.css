@@ -38,7 +38,7 @@ main {
   z-index: 10;
   text-align: justify;
   margin: 5%;
-  padding: 2%;
+  padding: 1%;
   border: 5px solid black;
   border-radius: 20%;
 }
