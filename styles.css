@@ -38,8 +38,8 @@ main {
   z-index: 10;
   text-align: justify;
   margin: 5%;
-  padding: 7%;
-  border: 10px solid black;
+  padding: 2%;
+  border: 5px solid black;
   border-radius: 20%;
 }
 .table {
@@ -114,3 +114,8 @@ main {
 footer {
   font-family: "Odibee Sans", cursive;
 }
+
+/* .main {
+  position: relative;
+  opacity: 0.5;
+  /* background-image: linear-gradient(45deg, #f3ec78, #af4261); */

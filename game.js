@@ -79,6 +79,7 @@ $(".flyer").hide();
 
 $(".flyer-btn").click(function () {
   $(".flyer").toggle();
+  $(".realgame").toggleClass("main");
   if ($(".flyer-btn").text() == "How to play") {
     $(".flyer-btn").text("");
   } else {
