@@ -12,33 +12,71 @@
       href="https://fonts.googleapis.com/css?family=Press+Start+2P"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <main>
       <button class="flyer-btn">How to play</button>
       <div class="flyer">
-        As you press the start. Randomly one of the four boxes will light up. On
-        each level you have to click exact same sequence of colors as chosen by
-        game until now. Eg- blue - blue - lvl - 1 red - blue - red - lvl -2
-        ...... Have fun!
+        <ul>
+          As you press the start. Randomly one of the four boxes will light up.
+        </ul>
+        <ul>
+          On each level you have to click exact same sequence of colors as
+          chosen by game until now.
+        </ul>
+        <table style="width: 100%" class="table">
+          <tr>
+            <th>Level</th>
+            <th>Computer</th>
+            <th>Player</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>
+              <div type="button" id="green" class="green start-btn"></div>
+            </td>
+            <td>
+              <div type="button" id="green" class="green start-btn"></div>
+              <div type="button" id="yellow" class="yellow start-btn hid"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <div type="button" id="yellow" class="yellow start-btn"></div>
+            </td>
+            <td>
+              <div type="button" id="green" class="green start-btn"></div>
+              <div type="button" id="yellow" class="yellow start-btn"></div>
+            </td>
+          </tr>
+        </table>
       </div>
-      <h1 id="level-title"></h1>
-      <button class="start">Start</button>
+      <div class="realgame">
+        <button class="start">Start</button>
+        <h1 id="level-title"></h1>
 
-      <div class="container">
-        <div lass="row">
-          <div type="button" id="green" class="btn green"></div>
+        <div class="container">
+          <div lass="row">
+            <div type="button" id="green" class="btn green"></div>
 
-          <div type="button" id="red" class="btn red"></div>
+            <div type="button" id="red" class="btn red"></div>
+          </div>
+
+          <div class="row">
+            <div type="button" id="yellow" class="btn yellow"></div>
+            <div type="button" id="blue" class="btn blue"></div>
+          </div>
         </div>
-
-        <div class="row">
-          <div type="button" id="yellow" class="btn yellow"></div>
-          <div type="button" id="blue" class="btn blue"></div>
-        </div>
+        <footer>Made with ❤️ by Parul.</footer>
       </div>
-      <footer>Made with ❤️ by Parul.</footer>
     </main>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"

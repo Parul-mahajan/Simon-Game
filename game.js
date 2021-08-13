@@ -4,7 +4,7 @@ var level = 0;
 starts = false;
 $(".start").click(function () {
   if (!starts) {
-    $("#level-title").text("Level " + level);
+    $("#level-title").text(level);
     $(".start").text("Restart");
     nextSequence();
     starts = true;
@@ -14,13 +14,7 @@ $(".start").click(function () {
     startOver();
   }
 });
-// $(document).keypress(function () {
-//   if (!starts) {
-//     $("#level-title").text("Level " + level);
-//     nextSequence();
-//     starts = true;
-//   }
-// });
+
 $(".btn").click(function () {
   var userChosenColour = $(this).attr("id");
   playsound(userChosenColour);
@@ -61,7 +55,7 @@ function nextSequence() {
     .fadeIn(100);
   playsound(randomChosenColour);
   level++;
-  $("#level-title").text("Level " + level);
+  $("#level-title").text(level);
 }
 function playsound(key) {
   var audio = new Audio("sounds/" + key + ".mp3");
@@ -87,10 +81,7 @@ $(".flyer-btn").click(function () {
   $(".flyer").toggle();
   if ($(".flyer-btn").text() == "How to play") {
     $(".flyer-btn").text("");
-  }
-  else if($(".flyer-btn").text() == "") {
+  } else {
     $(".flyer-btn").text("How to play");
   }
-  
-  //
 });
