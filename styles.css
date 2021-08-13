@@ -33,13 +33,14 @@ main {
 .flyer {
   font-family: "Odibee Sans", cursive;
   font-size: 1.5rem;
-  background-color: lightcoral;
+  /* color: #fef2bf; */
+  background-color: brown;
   position: absolute;
   z-index: 10;
   text-align: justify;
   margin: 5%;
+  border: 7px solid black;
   padding: 1%;
-  border: 6px solid black;
   border-radius: 20%;
 }
 .table {
